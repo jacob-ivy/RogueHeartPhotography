@@ -1,16 +1,34 @@
-.menu {
-  font-family: "Andale Mono", monospace;
-  display: grid;
-  align: middle;
-  grid-template-columns: auto auto auto auto auto;
+a {
+   color: whitesmoke;
+   text-decoration: none;
 }
 
-#grid {
-  display: grid;
-  grid-template-column: auto auto auto;
+a:hover {
+   color: blue;
+   text-decoration: underline;
+}
+.menu {
+   font-family: "Andale Mono", monospace;
+   margin: 0 10%;
+   list-style-type: none;
+   display: flex;
+   hoirizontal-align: middle;
+   background-color: purple;
+   
+}
+
+#port-menu {
+   display: grid;
+   list-style-type: none;
+   grid-template-columns: auto auto auto;
 }
 
 
 .bio {
-  font-family: "Trattatello", fantasy;
+   font-family: "Trattatello", fantasy;
+}
+
+.foot {
+   background-color: cyan;
+   font-size: smaller;
 }
