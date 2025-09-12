@@ -1,10 +1,12 @@
 .menu {
   font-family: "Andale Mono", monospace;
+  display: grid;
   align: middle;
   grid-template-columns: auto auto auto auto auto;
 }
 
 #grid {
+  display: grid;
   grid-template-column: auto auto auto;
 }
 
