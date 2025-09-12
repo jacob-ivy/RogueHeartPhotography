@@ -1,0 +1,14 @@
+.menu {
+  font-family: "Andale Mono", monospace;
+  align: middle;
+  grid-template-columns: auto auto auto auto auto;
+}
+
+#grid {
+  grid-template-column: auto auto auto;
+}
+
+
+.bio {
+  font-family: "Trattatello", fantasy;
+}
