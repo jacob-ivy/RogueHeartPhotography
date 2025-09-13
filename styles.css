@@ -1,3 +1,7 @@
+html {
+   background-color: azure;
+}
+
 a {
    color: whitesmoke;
    text-decoration: none;
@@ -8,27 +12,61 @@ a:hover {
    text-decoration: underline;
 }
 .menu {
-   font-family: "Andale Mono", monospace;
-   margin: 0 10%;
+   font-family: "Lucida Handwriting", monospace;
+   font-weight: bold;
+   padding: 20px;
+   margin: 0 5vh;
    list-style-type: none;
    display: flex;
-   hoirizontal-align: middle;
-   background-color: purple;
-   
+   justify-content: space-evenly;
+   align-content: center;
+   background-color: purple;   
+}
+
+.logo {
+   max-height: 10vh;
+}
+
+.sloganimg {
+   height: auto;
+   max-width: 100%;
+}
+
+.slogan {
+   font-family: papyrus;
+   color: white;
+   position: absolute;
+   text-align: center;
+   top: 125px;
+   right: 2%;
+   disply: block;
+   font-size: large;
+   font-weight: 100;
 }
 
 #port-menu {
-   display: grid;
+   display: flex;
    list-style-type: none;
-   grid-template-columns: auto auto auto;
+   justify-content: space-around;
+   align-content: center;
+   background-color: darkgrey;
 }
 
 
 .bio {
    font-family: "Trattatello", fantasy;
+   display: block;
+   justify-content: center;
+   text-align: center;
+   padding-top: 15vh
 }
 
 .foot {
    background-color: cyan;
    font-size: smaller;
+}
+
+#foot-list {
+   list-style-type: none ;
+   background-color: purple;
 }
