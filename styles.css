@@ -1,30 +1,37 @@
 html {
-   background-color: azure;
+   color: #B54250;
+   background-color: #FEF2DA;
+   font-family: Georgia, serif;
 }
 
 a {
-   color: whitesmoke;
+   color: #835E9F;
    text-decoration: none;
+   text-shadow: 1px 1px #1A1F19
 }
 
 a:hover {
-   color: blue;
+   color: #B54250;
    text-decoration: underline;
 }
+
+a:hover .image{
+   opacity: 0.3;
+}
+
 .menu {
-   font-family: "Lucida Handwriting", monospace;
+   font-family: Georgia, serif;
    font-weight: bold;
-   padding: 20px;
+   padding: 5vh 0;
    margin: 0 5vh;
    list-style-type: none;
    display: flex;
    justify-content: space-evenly;
-   align-content: center;
-   background-color: purple;   
+   align-items: center;
 }
 
 .logo {
-   max-height: 10vh;
+   max-height: 25vh;
 }
 
 .sloganimg {
@@ -37,11 +44,22 @@ a:hover {
    color: white;
    position: absolute;
    text-align: center;
-   top: 125px;
+   top: 40vh;
    right: 2%;
    disply: block;
    font-size: large;
-   font-weight: 100;
+   font-weight: medium;
+   text-shadow: 3px 3px #1A1F19;
+
+}
+
+.bio {
+   display: block;
+   justify-content: center;
+   text-align: center;
+   padding-top: 15vh;
+   min-height: 45vh;
+   justify-content: center;
 }
 
 #port-menu {
@@ -52,21 +70,7 @@ a:hover {
    background-color: darkgrey;
 }
 
-
-.bio {
-   font-family: "Trattatello", fantasy;
-   display: block;
-   justify-content: center;
-   text-align: center;
-   padding-top: 15vh
-}
-
-.foot {
-   background-color: cyan;
-   font-size: smaller;
-}
-
-#foot-list {
+.foot-list {
    list-style-type: none ;
-   background-color: purple;
+   float: left;
 }
