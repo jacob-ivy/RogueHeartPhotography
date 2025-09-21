@@ -15,10 +15,6 @@ a:hover {
    text-decoration: underline;
 }
 
-a:hover .image{
-   opacity: 0.3;
-}
-
 .menu {
    font-family: Georgia, serif;
    font-weight: bold;
@@ -35,6 +31,27 @@ a:hover .image{
    max-height: 25vh;
 }
 
+.menu-button {
+   text-shadow: 1px 1px #1A1F19;
+   color: #835E9F
+}
+
+.menu-button-content {
+   display: none;
+   position: absolute;
+
+}
+
+.portfolio-holder:hover .menu-button-content{
+   display: flex;
+   flex-direction: column;
+   background-color: gray;
+}
+
+.image-container {
+   position: relative;
+}
+
 .sloganimg {
    display: block;
    max-height: 80vh;
@@ -47,10 +64,10 @@ a:hover .image{
    color: white;
    position: absolute;
    text-align: center;
-   top: 40vh;
+   top: 25px;
    right: 25vw;
    disply: block;
-   font-size: 1em;
+   font-size: 150%;
    font-weight: medium;
    text-shadow: 3px 3px #1A1F19;
 
@@ -81,12 +98,6 @@ a:hover .image{
    grid-row-end: 3;
 }
 
-@media all and (max-width: 400px) {
-   .bio {
-      display: flex;
-   }
-}
-
 .slide-titles {
    display: flex;
    justify-content: space-around;
@@ -95,15 +106,37 @@ a:hover .image{
    font-weight: =bold;
 }
 
-#port-menu {
+.slide-menu {
    display: flex;
    list-style-type: none;
    justify-content: space-around;
-   align-content: center;
+   align-items: center;
    background-color: darkgrey;
-   text-align: center;
    font-weight: bold;
-   align-items: flex-start;
+   position: relative;
+}
+
+.slide-container:hover img{
+   opacity: 0.5;
+
+}
+
+.slide-container:hover div{
+   opacity: 1;
+}
+
+.slide-title {
+   position: absolute;
+   top: 40%;
+   font-size: 200%;
+   color: white;
+   opacity: 0;
+   transition: 0.5s ease;
+}
+
+.slide-title:hover {
+   opacity: 1;
+
 }
 
 .slide-pic {
@@ -112,7 +145,7 @@ a:hover .image{
    max-width: 25vw;
    padding: 0;
    margin: 0;
-
+   transition: .5s ease;
 }
 
 .foot-list {
