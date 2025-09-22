@@ -98,14 +98,6 @@ a:hover {
    grid-row-end: 3;
 }
 
-.slide-titles {
-   display: flex;
-   justify-content: space-around;
-   list-style-type: none;
-   font-size: 150%;
-   font-weight: =bold;
-}
-
 .slide-menu {
    display: flex;
    list-style-type: none;
