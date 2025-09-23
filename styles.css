@@ -122,7 +122,7 @@ a:hover {
    top: 40%;
    font-size: 200%;
    color: white;
-   opacity: 0;
+   opacity: 1;
    transition: 0.5s ease;
 }
 
