@@ -1,5 +1,5 @@
 html {
-   color: #B54250;
+   color: black;
    background-color: #FEF2DA;
    font-family: Georgia, serif;
 }
@@ -83,6 +83,7 @@ a:hover {
    padding-inline: 25vw;
    margin-bottom: 10vh;
    place-content: center;
+   background-color: #BD9A7A;
 }
 
 .bio-title {
@@ -102,7 +103,7 @@ a:hover {
    list-style-type: none;
    justify-content: space-around;
    align-items: center;
-   background-color: darkgrey;
+   background-color: #BD9A7A;
    font-weight: bold;
    position: relative;
 }
