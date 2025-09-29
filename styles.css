@@ -28,7 +28,7 @@ a:hover {
 }
 
 .logo {
-   max-height: 25vh;
+   max-width: 25vw;
 }
 
 .menu-button {
@@ -42,7 +42,7 @@ a:hover {
 
 }
 
-.portfolio-holder:hover .menu-button-content{
+.portfolio-holder:hover .menu-button-content {
    display: flex;
    flex-direction: column;
    background-color: gray;
@@ -54,8 +54,7 @@ a:hover {
 
 .sloganimg {
    display: block;
-   max-height: 80vh;
-   max-width: 100vw;
+   max-width: 70vw;
    margin-inline: auto;
 }
 
@@ -92,8 +91,7 @@ a:hover {
 }
 
 .bio-img {
-   max-width: 50vw;
-   max-height: 50vh;
+   max-width: 30vw;
    grid-row-start: 1;
    grid-row-end: 3;
 }
@@ -108,12 +106,12 @@ a:hover {
    position: relative;
 }
 
-.slide-container:hover img{
+.slide-container:hover img {
    opacity: 0.5;
 
 }
 
-.slide-container:hover div{
+.slide-container:hover div {
    opacity: 1;
 }
 
@@ -124,6 +122,7 @@ a:hover {
    color: white;
    opacity: 1;
    transition: 0.5s ease;
+   padding-inline: 10%
 }
 
 .slide-title:hover {
@@ -132,17 +131,104 @@ a:hover {
 }
 
 .slide-pic {
-   max-height: 60vh;
    float: down;
-   max-width: 25vw;
+   max-width: 20vw;
    padding: 0;
    margin: 0;
    transition: .5s ease;
+}
+
+.book-detail {
+   padding-inline: 40%;
+}
+
+.book-table {
+   font-size: large;
+   color: #835E9F;
+   border: 1px #FEF2DA;
+   border-radius: 10px;
+   padding: 0 20%;
+}
+
+td {
+   background-color:#BD9A7A 
+}
+
+.book-form {
+   padding: 0 25%;
+   border: 1px;
 }
 
 .foot-list {
    list-style-type: none;
    font-size: 90%;
    text-align: center;
+
+}
+@media all and (max-width: 500px){
+   .menu {
+      flex-direction: column;
+      margin-bottom: 20%;
+   }
+
+   .menu-button{
+      padding-top: 2vh;
+      
+   }
+
+   .menu-button-content {
+      display: grid;
+      grid-template-columns: 25vw 25vw;
+      grid-template-rows: 1fr 1fr;
+      font-style: italic;
+      font-size: medium;
+      align-content: space-around;
+      justify-content: space-between;
+   }
    
+   .slogan {
+      font-size: 100%;
+      align-content: flex-end;
+      bottom: 15px;
+      position: absolute;
+   }
+   
+   .sloganimg {
+      max-width: 90vw;
+   }
+   
+   .bio {
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      align-items: center;
+      padding: 0;
+   }
+
+   .bio-img {
+      max-width: 50vw;
+   }
+
+   .slide-menu {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      align-content: center;
+      justify-content: space-around;
+   }
+
+   .slide-container{
+      position: relative;
+      align-items: center;
+   }
+
+   .slide-title {
+      font-size: 100%;
+      padding: 20%;
+      justify-content: center;
+   }
+
+   .slide-pic {
+      max-width: 40vw;
+   }
 }
