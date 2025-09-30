@@ -165,6 +165,16 @@ td {
    text-align: center;
 
 }
+
+.portfolio-pages-sets {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-pages-sets img{
+   max-width: 30vw;
+}
+
 @media all and (max-width: 500px){
    .menu {
       flex-direction: column;
