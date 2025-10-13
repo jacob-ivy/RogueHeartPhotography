@@ -6,6 +6,8 @@ function sendMail() {
         desc : document.getElementById("desc").value
     }
 
-    emailjs.send("service_gwa68dc", "template_b5twp2v", parms).then(alert("Email Sent!"))
-    document.getElementsById("book-form").reset()
+    emailjs.send("service_gwa68dc", "template_b5twp2v", parms).then(() => {
+      alert("Email Sent!");
+      document.getElementById("book-form").reset()
+    })
 }
