@@ -7,5 +7,5 @@ function sendMail() {
     }
 
     emailjs.send("service_gwa68dc", "template_b5twp2v", parms).then(alert("Email Sent!"))
-    document.getElementsByClassName("book-form").reset()
+    document.getElementsById("book-form").reset()
 }
